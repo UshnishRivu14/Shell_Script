@@ -1,15 +1,14 @@
-preusr="Hero69"
-prepas="hero6369"
+pre_usr="rivu"
+pre_pass="14092003"
 
-echo "Enter your username: "
-read usr
-
-echo "Enter your password: "
+echo "Enter your username"
+read user
+echo "Enter your password"
 read pass
 
-if [ "$usr" == "$preusr" ] && [ "$pass" == "$prepas" ];
+if [ "$user" == "$pre_usr" ] && [ "$pass" == "$pre_pass" ] ;
 then
-	echo " Success! "
-else
-	echo " Error! "
+	echo "Success!"
+else :
+	echo "Error!"
 fi		

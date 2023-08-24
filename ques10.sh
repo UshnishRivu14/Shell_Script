@@ -1,16 +1,16 @@
-echo "Enter filename: "
-read filename
+echo "Enter a filename"
+read file
 
-if [ ! -f $filename  ];
-then
-	echo "File not found"
+if [ ! -f $file ];
+then 
+	echo "It doesnot exist"
 	exit
 fi
 
-num_lines=$(wc -l < $filename)
-num_words=$(wc -w < $filename)
-num_chars=$(wc -m < $filename)
+num_lines=$(wc -l < $file)
+num_words=$(wc  -w < $file)
+num_char=$(wc -m < $file )
 
-echo "Number of lines: $num_lines"
-echo "Number of words: $num_words"
-echo "Number of characters: $num_chars" 	
+echo "The number of lines: $num_lines"
+echo "The number of words: $num_words"
+echo "The number of characters: $num_char"	

@@ -1,11 +1,12 @@
-echo "Enter a string:"
-read input_str
+echo "Enter a string"
+read string
 
-reverse_str=$(echo $input_str | rev)
+revstring=$(echo $string | rev)
 
-if [ "$input_str" == "$reverse_str" ];
+if [ "$string" == "$revstring" ];
 then
-	echo "$input_str is a palindrome"
-else
-	echo "$input_str is not a palindrome"
+	echo "It is palindrome"
+else :
+	echo "It is not palindrome"
 fi		
+
